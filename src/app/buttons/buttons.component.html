@@ -1,4 +1,9 @@
 <hr>
-<button>List</button>
-<button>Add</button>
-<button>Reports</button>
+<button (click)="onClick('List')">List</button>
+<button (click)="onClick('Add')">Add</button>
+<button (click)="onClick('Reports')">Reports</button>
+
+<div *ngIf="selected==='List'">
+<hr>
+<app-list></app-list>
+</div>
