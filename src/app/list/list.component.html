@@ -1,7 +1,7 @@
 <div *ngIf="expenses">
   <ul>
-    <li *ngFor="let expense of expenses">
-      Any expense...
+    <li *ngFor="let e of expenses">
+      {{e.id}} - {{e.amount}} - {{e.name}} - {{e.price}} - {{e.group}} - {{e.desc}}
     </li>
   </ul>
 </div>

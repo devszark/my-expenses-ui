@@ -4,6 +4,16 @@
 <button (click)="onClick('Reports')">Reports</button>
 
 <div *ngIf="selected==='List'">
-<hr>
-<app-list></app-list>
+  <hr>
+  <app-list></app-list>
+</div>
+
+<div *ngIf="selected==='Add'">
+  <hr>
+  <app-add-expense></app-add-expense>
+</div>
+
+<div *ngIf="selected==='Reports'">
+  <hr>
+  <app-reports></app-reports>
 </div>
