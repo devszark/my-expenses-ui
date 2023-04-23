@@ -13,5 +13,6 @@ Application for tracking personal expenses
  - add pagination
 - create service which takes data from backend (insted of mock data)
 - create Sprint backen app with REST API to serve expenses (CRUD)
+- add "add-expense" functionality
 
 

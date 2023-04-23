@@ -1,7 +1,7 @@
 <hr>
-<button (click)="onClick('List')">List</button>
-<button (click)="onClick('Add')">Add</button>
-<button (click)="onClick('Reports')">Reports</button>
+<button (click)="onClick('List')" [class.selected]="selected === 'List'">List</button>
+<button (click)="onClick('Add')" [class.selected]="selected === 'Add'">Add</button>
+<button (click)="onClick('Reports')" [class.selected]="selected === 'Reports'">Reports</button>
 
 <div *ngIf="selected==='List'">
   <hr>

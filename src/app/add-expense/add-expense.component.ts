@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Expense } from '../expense';
+import { EXPENSES } from '../mock-expenses';
 
 @Component({
   selector: 'app-add-expense',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-expense.component.css']
 })
 export class AddExpenseComponent {
-
+  expense: Expense = EXPENSES[3];
 }

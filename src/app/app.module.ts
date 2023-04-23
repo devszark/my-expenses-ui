@@ -6,6 +6,7 @@ import { ButtonsComponent } from './buttons/buttons.component';
 import { ListComponent } from './list/list.component';
 import { AddExpenseComponent } from './add-expense/add-expense.component';
 import { ReportsComponent } from './reports/reports.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ReportsComponent } from './reports/reports.component';
     ReportsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

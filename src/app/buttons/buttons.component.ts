@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./buttons.component.css']
 })
 export class ButtonsComponent {
-  selected: string = 'List';
+  selected: string = 'Add';
 
   onClick(what: string): void {
     this.selected=what;
