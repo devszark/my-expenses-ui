@@ -24,4 +24,8 @@ export class ExpenseService {
     console.log(`ExpenseService:addExpense - new expense to be added: ${JSON.stringify(newExpense)}`);
   }
 
+  deleteExpense(e: Expense): void {
+    console.log(`ExpenseService:deleteExpense - expense to be removed: ${JSON.stringify(e)}`);
+  }
+
 }

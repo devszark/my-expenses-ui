@@ -19,4 +19,8 @@ export class ListComponent {
     this.expenseService.getExpenses().subscribe(expenses => this.expenses=expenses);
   }
 
+  deleteExpense(e: Expense): void {
+    this.expenseService.deleteExpense(e);
+  }
+
 }
