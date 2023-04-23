@@ -15,4 +15,7 @@ Application for tracking personal expenses
 - create Sprint backen app with REST API to serve expenses (CRUD)
 - add "add-expense" functionality
 
+#Potential features:
+- message Service to display messages in the application
+
 

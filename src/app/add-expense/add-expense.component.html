@@ -22,4 +22,4 @@
   <label>Expense description: </label>
   <input [(ngModel)]="expense.desc">
 </div>
-<button>Add / Save</button>
+<button (click)="addExpense(expense)">Add / Save</button>
