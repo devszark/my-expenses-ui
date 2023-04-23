@@ -14,6 +14,7 @@
     <th>Price</th>
     <th>Group</th>
     <th>Description</th>
+    <th>Actions</th>
   </tr>
   <tr *ngFor="let e of expenses">
     <td>{{e.id}}</td>
@@ -22,5 +23,8 @@
     <td>{{e.price}}</td>
     <td>{{e.group}}</td>
     <td>{{e.desc}}</td>
+    <td>
+      <button (click)="deleteExpense(e)">delete</button>
+    </td>
   </tr>
 </table>

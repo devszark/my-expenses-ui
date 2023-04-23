@@ -1,6 +1,6 @@
 import { Expense } from "./expense";
 
-export let EXPENSES:Expense[] = [
+export const EXPENSES:Expense[] = [
   { id: 1, amount: 1, price: 25, name: 'lunch', group: 'food', desc: 'Lunch in Wroclavia' },
   { id: 2, amount: 2, price: 7.60, name: 'bread', group: 'food', desc: 'Bread from local bakery' },
   { id: 3, amount: 1, price: 120, name: 't-shirt', group: 'food', desc: 'Lunch in Wroclavia' },
