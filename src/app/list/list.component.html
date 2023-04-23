@@ -1,7 +1,26 @@
-<div *ngIf="expenses">
+<!-- <div *ngIf="expenses">
   <ul>
     <li *ngFor="let e of expenses">
       {{e.id}} - {{e.amount}} - {{e.name}} - {{e.price}} - {{e.group}} - {{e.desc}}
     </li>
   </ul>
-</div>
+</div> -->
+
+<table *ngIf="expenses">
+  <tr>
+    <th>Id</th>
+    <th>Amount</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Group</th>
+    <th>Description</th>
+  </tr>
+  <tr *ngFor="let e of expenses">
+    <td>{{e.id}}</td>
+    <td>{{e.amount}}</td>
+    <td>{{e.name}}</td>
+    <td>{{e.price}}</td>
+    <td>{{e.group}}</td>
+    <td>{{e.desc}}</td>
+  </tr>
+</table>
