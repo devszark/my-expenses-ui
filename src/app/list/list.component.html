@@ -16,15 +16,15 @@
     <th>Description</th>
     <th>Actions</th>
   </tr>
-  <tr *ngFor="let e of expenses">
-    <td>{{e.id}}</td>
-    <td>{{e.amount}}</td>
-    <td>{{e.name}}</td>
-    <td>{{e.price}}</td>
-    <td>{{e.group}}</td>
-    <td>{{e.desc}}</td>
+  <tr *ngFor="let expense of expenses">
+    <td>{{expense.id}}</td>
+    <td>{{expense.amount}}</td>
+    <td>{{expense.name}}</td>
+    <td>{{expense.price}}</td>
+    <td>{{expense.group}}</td>
+    <td>{{expense.desc}}</td>
     <td>
-      <button (click)="deleteExpense(e)">delete</button>
+      <button (click)="deleteExpense(expense)">delete</button>
     </td>
   </tr>
 </table>
