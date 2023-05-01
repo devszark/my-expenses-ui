@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Expense } from './expense';
+import { Expense } from '../expense';
 import { EXPENSES } from './mock-expenses';
 import { Observable, of } from 'rxjs';
 
