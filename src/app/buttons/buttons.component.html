@@ -3,7 +3,9 @@
 <button (click)="onClick('Add')" [class.selected]="selected === 'Add'">Add</button>
 <button (click)="onClick('Reports')" [class.selected]="selected === 'Reports'">Reports</button>
 
-<div *ngIf="selected==='List'">
+<router-outlet></router-outlet>
+
+<!-- <div *ngIf="selected==='List'">
   <hr>
   <app-list></app-list>
 </div>
@@ -16,4 +18,4 @@
 <div *ngIf="selected==='Reports'">
   <hr>
   <app-reports></app-reports>
-</div>
+</div> -->
