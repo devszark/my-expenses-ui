@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { Expense } from '../expense';
-import { EXPENSES } from '../mock-expenses';
-import { ExpenseService } from '../expense.service';
+import { Expense } from '../../expense';
+import { ExpenseService } from '../../services/expense.service';
 
 @Component({
   selector: 'app-list',
@@ -19,8 +18,8 @@ export class ListComponent {
     this.expenseService.getExpenses().subscribe(expenses => this.expenses=expenses);
   }
 
-  deleteExpense(e: Expense): void {
-    this.expenseService.deleteExpense(e);
+  deleteExpense(expense: Expense): void {
+    this.expenseService.deleteExpense(expense);
   }
 
 }

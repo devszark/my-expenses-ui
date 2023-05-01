@@ -1,4 +1,4 @@
-import { Expense } from "./expense";
+import { Expense } from "../expense";
 
 export const EXPENSES:Expense[] = [
   { id: 1, amount: 1, price: 25, name: 'lunch', group: 'food', desc: 'Lunch in Wroclavia' },

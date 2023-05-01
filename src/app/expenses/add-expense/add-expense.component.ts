@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { Expense } from '../expense';
-import { EXPENSES } from '../mock-expenses';
-import { ExpenseService } from '../expense.service';
+import { Expense } from '../../expense';
+import { ExpenseService } from '../../services/expense.service';
 
 @Component({
   selector: 'app-add-expense',
