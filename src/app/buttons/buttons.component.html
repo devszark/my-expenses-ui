@@ -1,21 +1,7 @@
 <hr>
-<button (click)="onClick('List')" [class.selected]="selected === 'List'">List</button>
-<button (click)="onClick('Add')" [class.selected]="selected === 'Add'">Add</button>
-<button (click)="onClick('Reports')" [class.selected]="selected === 'Reports'">Reports</button>
-
-<router-outlet></router-outlet>
-
-<!-- <div *ngIf="selected==='List'">
-  <hr>
-  <app-list></app-list>
-</div>
-
-<div *ngIf="selected==='Add'">
-  <hr>
-  <app-add-expense></app-add-expense>
-</div>
-
-<div *ngIf="selected==='Reports'">
-  <hr>
-  <app-reports></app-reports>
-</div> -->
+<a [routerLink]="['/list']" routerLinkActive="active-link">List</a>
+<span> - </span>
+<a [routerLink]="['/add']" routerLinkActive="active-link">Add</a>
+<span> - </span>
+<a [routerLink]="['/reports']" routerLinkActive="active-link">Reports</a>
+<hr>
