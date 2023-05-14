@@ -1,7 +1,18 @@
 <h1><img src="assets/money.png" height="45"> {{title}} application <img src="assets/money.png" height="45"></h1>
 
-<app-buttons></app-buttons>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span style="margin: 10px;">My Expenses Application</span>
+    <span class="menu-spacer"></span>
+    <div>
+      <button><a [routerLink]="['/list']" routerLinkActive="active-link">List</a></button>
+      <button><a [routerLink]="['/add']" routerLinkActive="active-link">Add</a></button>
+      <button><a [routerLink]="['/reports']" routerLinkActive="active-link">Reports</a></button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
 
+<p></p>
 <router-outlet></router-outlet>
 
 <hr>
